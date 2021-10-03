@@ -1,7 +1,6 @@
-F-String Tutorial
-----------------
+## F-String Tutorial
 
-"F-strings provide a concise, readable way to include the value of Python expressions inside strings"
+"F-strings provide a concise, readable way to include the value of Python expressions inside strings". Accompanying YouTube video for this code is here: https://youtu.be/ZyhIAcQ7dFo.
 
 Read more about f-strings at:
 
