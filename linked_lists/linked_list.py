@@ -26,6 +26,7 @@ class LinkedList:
         return node
 
     def insert_at(self, node: Node, insert_index: int) -> Node:
+        # special case for insertion at index 0 to simplify the operation
         if insert_index == 0:
             node.next = self.head
             self.head = node
@@ -48,6 +49,7 @@ class LinkedList:
             raise Exception("Insert index out of range")
 
     def remove_at(self, remove_index: int) -> Node:
+        # special case for removal at index 0 to simplify the operation
         if remove_index == 0:
             deleted_elem = self.head
             self.head = self.head.next
@@ -87,6 +89,7 @@ linked_list = LinkedList()
 linked_list.append(Node("A"))
 linked_list.append(Node("B"))
 linked_list.append(Node("D"))
+print(linked_list)
 
 linked_list.insert_at(Node("C"), 2)
 print(linked_list)
